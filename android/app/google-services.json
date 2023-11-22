@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524140351902",
+    "project_id": "proyecto-dam-2023-c8ed2",
+    "storage_bucket": "proyecto-dam-2023-c8ed2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524140351902:android:5c5b2a234fb54f424c468f",
+        "android_client_info": {
+          "package_name": "com.usm.dam_proyecto_final"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAItTt6v_18tcLvNNQ09ITi7crPG-wo0cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
