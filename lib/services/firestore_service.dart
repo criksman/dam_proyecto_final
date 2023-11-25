@@ -6,6 +6,16 @@ class FirestoreService{
     return FirebaseFirestore.instance.collection('eventos').snapshots();
   }
 
+  Stream<QuerySnapshot> eventoAntesDeFechaActual(){
+    DateTime fecha_actual = DateTime.now();
+    return FirebaseFirestore.instance.collection('eventos').where('fecha', isLessThan: fecha_actual).snapshots();
+  }
+
+  Stream<QuerySnapshot> eventoDespuesDeFechaActual(){
+    DateTime fecha_actual = DateTime.now();
+    return FirebaseFirestore.instance.collection('eventos').where('fecha', isGreaterThan: fecha_actual).snapshots();
+  }
+
   Future<void> eventoBorrar(String docId) async {
     return FirebaseFirestore.instance.collection('eventos').doc(docId).delete();
   }

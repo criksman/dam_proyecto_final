@@ -19,6 +19,12 @@ class EventoCampo extends StatelessWidget {
         decoration: InputDecoration(
           label: Text(this.nombre),
         ),
+        validator: (value) {
+          if (value!.isEmpty){
+            return '${this.nombre} es requerido';
+          }
+          return null;
+        },
       ),
     );
   }
